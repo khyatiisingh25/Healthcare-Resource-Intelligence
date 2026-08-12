@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, Float
 from app.db.database import Base
 
 
@@ -9,4 +9,5 @@ class Facility(Base):
     name = Column(String, nullable=False)
     facility_type = Column(String, nullable=False)
     city = Column(String, nullable=False)
-    address = Column(String, nullable=True)
+    latitude = Column(Float, nullable=False)
+    longitude = Column(Float, nullable=False)

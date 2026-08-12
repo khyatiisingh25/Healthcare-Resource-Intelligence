@@ -29,7 +29,8 @@ def create_facility(
         name=facility.name,
         facility_type=facility.facility_type,
         city=facility.city,
-        address=facility.address
+        latitude=facility.latitude,
+        longitude=facility.longitude
     )
 
     db.add(new_facility)

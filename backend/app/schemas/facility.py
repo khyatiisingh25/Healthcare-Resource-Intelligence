@@ -5,7 +5,8 @@ class FacilityCreate(BaseModel):
     name: str
     facility_type: str
     city: str
-    address: str | None = None
+    latitude: float
+    longitude: float
 
 
 class FacilityResponse(BaseModel):
@@ -13,7 +14,8 @@ class FacilityResponse(BaseModel):
     name: str
     facility_type: str
     city: str
-    address: str | None = None
+    latitude: float
+    longitude: float
 
     class Config:
         from_attributes = True
