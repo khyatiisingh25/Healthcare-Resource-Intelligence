@@ -6,7 +6,7 @@
 
 - Current stock
 - Historical consumption
-- Average consumption
+- Average daily consumption
 - Consumption trend
 - Lead time
 - Safety stock
